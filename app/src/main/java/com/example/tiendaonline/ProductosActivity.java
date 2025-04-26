@@ -49,11 +49,11 @@ public class ProductosActivity extends AppCompatActivity implements ProductoAdap
         List<Producto> lista = new ArrayList<>();
         // Aquí agregaríamos productos de ejemplo
         lista.add(new Producto("Laptop", "Laptop gaming de última generación", 999.99,
-                R.drawable.ic_launcher_foreground));
+                R.mipmap.ic_launcher));
         lista.add(new Producto("Smartphone", "Smartphone con cámara de alta resolución", 699.99,
-                R.drawable.ic_launcher_foreground));
+                R.mipmap.ic_launcher));
         lista.add(new Producto("Auriculares", "Auriculares inalámbricos con cancelación de ruido", 199.99,
-                R.drawable.ic_launcher_foreground));
+                R.mipmap.ic_launcher));
         return lista;
     }
 

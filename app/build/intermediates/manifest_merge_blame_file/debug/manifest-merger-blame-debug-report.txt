@@ -1,0 +1,100 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.tiendaonline"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\33404c953cb309f6febf9fa52f21f238\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.tiendaonline.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\33404c953cb309f6febf9fa52f21f238\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\33404c953cb309f6febf9fa52f21f238\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.tiendaonline.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\33404c953cb309f6febf9fa52f21f238\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\33404c953cb309f6febf9fa52f21f238\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:5:5-34:19
+18        android:allowBackup="true"
+18-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\33404c953cb309f6febf9fa52f21f238\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:7:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:8:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:9:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:10:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" >
+27-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:11:9-76
+28        <activity
+28-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:13:9-20:20
+29            android:name="com.example.tiendaonline.LoginActivity"
+29-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:14:13-42
+30            android:exported="true" >
+30-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:15:13-36
+31            <intent-filter>
+31-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:16:13-19:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:17:17-69
+32-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:17:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:18:17-77
+34-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:18:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity
+37-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:22:9-24:40
+38            android:name="com.example.tiendaonline.ProductosActivity"
+38-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:23:13-46
+39            android:exported="false" />
+39-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:24:13-37
+40        <activity
+40-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:26:9-28:40
+41            android:name="com.example.tiendaonline.CarritoActivity"
+41-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:27:13-44
+42            android:exported="false" />
+42-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:28:13-37
+43        <activity
+43-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:30:9-32:40
+44            android:name="com.example.tiendaonline.RegistroActivity"
+44-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:31:13-45
+45            android:exported="false" />
+45-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:32:13-37
+46
+47        <provider
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\b27f2f233103da1a6da58ada4056a29a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+48            android:name="androidx.startup.InitializationProvider"
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\b27f2f233103da1a6da58ada4056a29a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+49            android:authorities="com.example.tiendaonline.androidx-startup"
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\b27f2f233103da1a6da58ada4056a29a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+50            android:exported="false" >
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\b27f2f233103da1a6da58ada4056a29a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+51            <meta-data
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\b27f2f233103da1a6da58ada4056a29a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\b27f2f233103da1a6da58ada4056a29a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+53                android:value="androidx.startup" />
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\b27f2f233103da1a6da58ada4056a29a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\8a3670fa1b6e46f84b272cc10b6d64dc\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\8a3670fa1b6e46f84b272cc10b6d64dc\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.10\transforms\8a3670fa1b6e46f84b272cc10b6d64dc\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+57        </provider>
+58    </application>
+59
+60</manifest>

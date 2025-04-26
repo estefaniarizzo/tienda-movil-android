@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-28:/layout_activity_productos.xml.flat",
+        "source": "com.example.tiendaonline.app-main-30:/layout/activity_productos.xml"
+    },
+    {
+        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_item_producto.xml.flat",
+        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\item_producto.xml"
+    },
+    {
+        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_activity_carrito.xml.flat",
+        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\activity_carrito.xml"
+    },
+    {
+        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_activity_registro.xml.flat",
+        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\activity_registro.xml"
+    },
+    {
+        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_activity_productos.xml.flat",
+        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\activity_productos.xml"
+    },
+    {
+        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\mipmap_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\mipmap\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\mipmap_ic_launcher.png.flat",
+        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\mipmap\\ic_launcher.png"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.example.tiendaonline.app-debug-28:/layout_activity_carrito.xml.flat",
+        "source": "com.example.tiendaonline.app-main-30:/layout/activity_carrito.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-debug-28:/layout_activity_registro.xml.flat",
+        "source": "com.example.tiendaonline.app-main-30:/layout/activity_registro.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-debug-28:/layout_item_producto.xml.flat",
+        "source": "com.example.tiendaonline.app-main-30:/layout/item_producto.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-debug-28:/layout_activity_login.xml.flat",
+        "source": "com.example.tiendaonline.app-main-30:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-debug-28:/mipmap_ic_launcher.png.flat",
+        "source": "com.example.tiendaonline.app-main-30:/mipmap/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-debug-28:/mipmap_ic_launcher_round.png.flat",
+        "source": "com.example.tiendaonline.app-main-30:/mipmap/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-debug-28:/layout_activity_productos.xml.flat",
+        "source": "com.example.tiendaonline.app-main-30:/layout/activity_productos.xml"
+    }
+]
