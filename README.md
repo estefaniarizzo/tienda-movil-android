@@ -42,6 +42,7 @@ Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
 4. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
 5. Push a la rama (`git push origin feature/AmazingFeature`)
 6. Abre un Pull Request
+<<<<<<< HEAD
 
 ## 📄 Licencia
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
@@ -51,3 +52,5 @@ Tu Nombre - [@tuTwitter](https://twitter.com/tuTwitter)
 Email - tu@email.com
 
 Enlace del proyecto: [https://github.com/tu-usuario/tienda-movil-android](https://github.com/tu-usuario/tienda-movil-android)
+=======
+>>>>>>> d7761b434f270575faddfe6077cf2e00b6ef5176
