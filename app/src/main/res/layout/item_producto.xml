@@ -4,22 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardElevation="4dp"
-    app:cardCornerRadius="8dp">
+    android:layout_margin="12dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="16dp"
+    app:strokeColor="@color/colorPrimary"
+    app:strokeWidth="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="12dp">
 
         <ImageView
             android:id="@+id/ivProducto"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
             android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/ic_launcher"
+            android:background="@drawable/circle_bg"
+            android:elevation="2dp"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -32,30 +36,52 @@
                 android:id="@+id/tvNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"/>
 
             <TextView
                 android:id="@+id/tvDescripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"/>
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorTextSecondary"/>
 
             <TextView
                 android:id="@+id/tvPrecio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textColor="@android:color/holo_green_dark"
-                android:textStyle="bold"/>
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnAgregar"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Agregar"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorOnPrimary"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                android:backgroundTint="@color/colorError"
+                android:textColor="@color/colorOnPrimary"
+                android:visibility="gone"/>
+        </LinearLayout>
 
     </LinearLayout>
 

@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class LoginActivity extends AppCompatActivity {
     private EditText etEmail, etPassword;
     private Button btnLogin, btnRegistro;
+    private DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         btnRegistro = findViewById(R.id.btnRegistro);
 
+        dbHelper = new DatabaseHelper(this);
+
         // Configurar listeners
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,15 +35,20 @@ public class LoginActivity extends AppCompatActivity {
                 String password = etPassword.getText().toString();
 
                 if (email.isEmpty() || password.isEmpty()) {
-                    Toast.makeText(LoginActivity.this, "Por favor complete todos los campos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Por favor complete todos los campos", Toast.LENGTH_SHORT)
+                            .show();
                     return;
                 }
 
-                // Aquí iría la lógica de autenticación
-                // Por ahora solo navegamos a la lista de productos
-                Intent intent = new Intent(LoginActivity.this, ProductosActivity.class);
-                startActivity(intent);
-                finish();
+                boolean existe = dbHelper.checkUser(email, password);
+                if (existe) {
+                    Toast.makeText(LoginActivity.this, "¡Bienvenido!", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginActivity.this, ProductosActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -52,4 +60,4 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
-} 
+}

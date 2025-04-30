@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class RegistroActivity extends AppCompatActivity {
     private EditText etNombre, etEmail, etPassword, etConfirmarPassword, etTelefono;
     private Button btnRegistrar, btnVolver;
+    private DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,16 +28,26 @@ public class RegistroActivity extends AppCompatActivity {
         btnRegistrar = findViewById(R.id.btnRegistrar);
         btnVolver = findViewById(R.id.btnVolver);
 
+        dbHelper = new DatabaseHelper(this);
+
         // Configurar listeners
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (validarCampos()) {
-                    // Aquí implementaríamos la lógica de registro
-                    Toast.makeText(RegistroActivity.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
-                    startActivity(intent);
-                    finish();
+                    String nombre = etNombre.getText().toString();
+                    String email = etEmail.getText().toString();
+                    String password = etPassword.getText().toString();
+                    // Guardar usuario en la base de datos
+                    boolean registrado = dbHelper.registerUser(nombre, email, password);
+                    if (registrado) {
+                        Toast.makeText(RegistroActivity.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(RegistroActivity.this, "Error al registrar", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
