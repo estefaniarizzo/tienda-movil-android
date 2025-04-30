@@ -1,7 +1,6 @@
 package com.example.tiendaonline;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -20,32 +19,23 @@ public class ProductosActivity extends AppCompatActivity implements ProductoAdap
     private ProductoAdapter adapter;
     private List<Producto> productos;
     private FloatingActionButton fabCarrito;
-    private FloatingActionButton fabMapa;
-    private DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_productos);
 
+        // Inicializar vistas
         rvProductos = findViewById(R.id.rvProductos);
         fabCarrito = findViewById(R.id.fabCarrito);
-        fabMapa = findViewById(R.id.fabMapa);
-        dbHelper = new DatabaseHelper(this);
 
-        // Insertar productos de ejemplo si la base está vacía
-        if (dbHelper.getAllProducts().getCount() == 0) {
-            dbHelper.addProduct("Laptop", 999.99);
-            dbHelper.addProduct("Smartphone", 699.99);
-            dbHelper.addProduct("Auriculares", 199.99);
-        }
-
-        // Cargar productos desde la base de datos
-        productos = cargarProductosDesdeBD();
+        // Configurar RecyclerView
         rvProductos.setLayoutManager(new LinearLayoutManager(this));
+        productos = crearListaProductos();
         adapter = new ProductoAdapter(productos, this);
         rvProductos.setAdapter(adapter);
 
+        // Configurar FAB
         fabCarrito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,39 +43,23 @@ public class ProductosActivity extends AppCompatActivity implements ProductoAdap
                 startActivity(intent);
             }
         });
-
-        fabMapa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ProductosActivity.this, MapaActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
-    private List<Producto> cargarProductosDesdeBD() {
+    private List<Producto> crearListaProductos() {
         List<Producto> lista = new ArrayList<>();
-        Cursor cursor = dbHelper.getAllProducts();
-        if (cursor.moveToFirst()) {
-            do {
-                int id = cursor.getInt(cursor.getColumnIndexOrThrow("id"));
-                String nombre = cursor.getString(cursor.getColumnIndexOrThrow("name"));
-                double precio = cursor.getDouble(cursor.getColumnIndexOrThrow("price"));
-                // No hay descripción ni imagen en la BD, así que ponemos valores por defecto
-                lista.add(new Producto(id, nombre, "Sin descripción", precio, R.mipmap.ic_launcher));
-            } while (cursor.moveToNext());
-        }
-        cursor.close();
+        // Aquí agregaríamos productos de ejemplo
+        lista.add(new Producto("Laptop", "Laptop gaming de última generación", 999.99,
+                R.mipmap.ic_launcher));
+        lista.add(new Producto("Smartphone", "Smartphone con cámara de alta resolución", 699.99,
+                R.mipmap.ic_launcher));
+        lista.add(new Producto("Auriculares", "Auriculares inalámbricos con cancelación de ruido", 199.99,
+                R.mipmap.ic_launcher));
         return lista;
     }
 
     @Override
     public void onAgregarClick(Producto producto) {
-        boolean agregado = dbHelper.addToCart(producto.getId(), 1);
-        if (agregado) {
-            Toast.makeText(this, "Producto agregado al carrito: " + producto.getNombre(), Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "Error al agregar al carrito", Toast.LENGTH_SHORT).show();
-        }
+        // Aquí implementaríamos la lógica para agregar al carrito
+        Toast.makeText(this, "Producto agregado al carrito: " + producto.getNombre(), Toast.LENGTH_SHORT).show();
     }
 }

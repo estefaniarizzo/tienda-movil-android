@@ -1,31 +1,16 @@
 package com.example.tiendaonline;
 
 public class Producto {
-    private int id;
     private String nombre;
     private String descripcion;
     private double precio;
     private int imagen;
 
-    public Producto(int id, String nombre, String descripcion, double precio, int imagen) {
-        this.id = id;
+    public Producto(String nombre, String descripcion, double precio, int imagen) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
         this.imagen = imagen;
-    }
-
-    // Constructor sin id (para productos nuevos)
-    public Producto(String nombre, String descripcion, double precio, int imagen) {
-        this(-1, nombre, descripcion, precio, imagen);
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNombre() {
