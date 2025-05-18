@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tiendaonline.app-mergeDebugResources-26:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.example.tiendaonline.app-mergeDebugResources-36:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.10\\transforms\\5fa77a66ffc0db759233319902a7f26b\\transformed\\material-1.9.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.14\\transforms\\afa80e07d5c10f3084ec2145ad176c9a\\transformed\\material-1.11.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

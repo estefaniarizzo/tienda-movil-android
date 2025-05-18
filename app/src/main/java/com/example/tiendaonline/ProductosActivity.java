@@ -59,7 +59,7 @@ public class ProductosActivity extends AppCompatActivity implements ProductoAdap
 
     @Override
     public void onAgregarClick(Producto producto) {
-        // Aquí implementaríamos la lógica para agregar al carrito
+        CarritoManager.getInstance().agregarProducto(producto);
         Toast.makeText(this, "Producto agregado al carrito: " + producto.getNombre(), Toast.LENGTH_SHORT).show();
     }
 }

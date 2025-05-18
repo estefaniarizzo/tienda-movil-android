@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tiendaonline.app-mergeDebugResources-26:/values-v24/values-v24.xml",
+            "outputFile": "com.example.tiendaonline.app-mergeDebugResources-36:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.10\\transforms\\5fa77a66ffc0db759233319902a7f26b\\transformed\\material-1.9.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.14\\transforms\\6e79d204856ef5cea82298a23a93ac58\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.14\\transforms\\afa80e07d5c10f3084ec2145ad176c9a\\transformed\\material-1.11.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -20,16 +30,6 @@
                         "endLines": "4,5,6,7,10,13,16,19",
                         "endColumns": "84,98,86,100,10,10,10,10",
                         "endOffsets": "427,526,613,714,913,1126,1327,1542"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.10\\transforms\\8a554ac9a5ed89459e8c63315978d50b\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]

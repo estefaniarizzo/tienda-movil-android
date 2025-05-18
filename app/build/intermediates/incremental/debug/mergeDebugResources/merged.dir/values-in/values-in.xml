@@ -39,6 +39,24 @@
     <string name="character_counter_content_description">Karakter yang dimasukkan %1$d dari %2$d</string>
     <string name="character_counter_overflowed_content_description">Melebihi batas karakter %1$d dari %2$d</string>
     <string name="clear_text_end_icon_content_description">Menghapus teks</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktifkan</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s tidak akan berfungsi jika layanan Google Play tidak diaktifkan.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Aktifkan layanan Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instal</string>
+    <string name="common_google_play_services_install_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang tidak ada di perangkat Anda.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Dapatkan layanan Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Ketersediaan layanan Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Kesalahan layanan Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s mengalami masalah dengan layanan Google Play. Coba lagi.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang tidak didukung oleh perangkat Anda.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s tidak akan berjalan jika layanan Google Play tidak diperbarui.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Perbarui layanan Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s tidak akan berjalan tanpa layanan Google Play, yang saat ini sedang diperbarui.</string>
+    <string name="common_google_play_services_wear_update_text">Perlu versi baru layanan Google Play. Akan segera memperbarui sendiri.</string>
+    <string name="common_open_on_phone">Buka di ponsel</string>
+    <string name="common_signin_button_text">Login</string>
+    <string name="common_signin_button_text_long">Login dengan Google</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Tampilkan menu dropdown</string>
     <string name="icon_content_description">Ikon Dialog</string>
@@ -61,18 +79,22 @@
     <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Lebih dari %1$d notifikasi baru</string>
     <string name="mtrl_picker_a11y_next_month">Ubah ke bulan berikutnya</string>
     <string name="mtrl_picker_a11y_prev_month">Ubah ke bulan sebelumnya</string>
+    <string name="mtrl_picker_announce_current_range_selection">Pemilihan tanggal mulai: %1$s – Pemilihan tanggal akhir: %2$s</string>
     <string name="mtrl_picker_announce_current_selection">Pilihan saat ini: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">tidak ada</string>
     <string name="mtrl_picker_cancel">Batal</string>
     <string name="mtrl_picker_confirm">Oke</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">Pilih Tanggal</string>
     <string name="mtrl_picker_date_header_unselected">Tanggal yang dipilih</string>
     <string name="mtrl_picker_day_of_week_column_header">Kolom hari: %1$s</string>
+    <string name="mtrl_picker_end_date_description">Tanggal akhir %1$s</string>
     <string name="mtrl_picker_invalid_format">Format tidak valid.</string>
     <string name="mtrl_picker_invalid_format_example">Contoh: %1$s</string>
     <string name="mtrl_picker_invalid_format_use">Gunakan: %1$s</string>
     <string name="mtrl_picker_invalid_range">Rentang tidak valid.</string>
-    <string name="mtrl_picker_navigate_to_year_description">Buka tahun %1$s</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Pilih tahun ini %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Buka tahun %1$d</string>
     <string name="mtrl_picker_out_of_range">Di luar rentang: %1$s</string>
     <string name="mtrl_picker_range_header_only_end_selected">Tanggal mulai – %1$s</string>
     <string name="mtrl_picker_range_header_only_start_selected">%1$s – Tanggal akhir</string>
@@ -80,16 +102,18 @@
     <string name="mtrl_picker_range_header_title">Pilih Rentang</string>
     <string name="mtrl_picker_range_header_unselected">Tanggal mulai – Tanggal akhir</string>
     <string name="mtrl_picker_save">Simpan</string>
+    <string name="mtrl_picker_start_date_description">Tanggal mulai %1$s</string>
     <string name="mtrl_picker_text_input_date_hint">Tanggal</string>
     <string name="mtrl_picker_text_input_date_range_end_hint">Tanggal akhir</string>
     <string name="mtrl_picker_text_input_date_range_start_hint">Tanggal mulai</string>
     <string name="mtrl_picker_text_input_day_abbr">h</string>
     <string name="mtrl_picker_text_input_month_abbr">b</string>
     <string name="mtrl_picker_text_input_year_abbr">t</string>
+    <string name="mtrl_picker_today_description">Hari ini %1$s</string>
     <string name="mtrl_picker_toggle_to_calendar_input_mode">Beralih ke mode masukan kalender</string>
-    <string name="mtrl_picker_toggle_to_day_selection">Ketuk untuk beralih ke memilih hari</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Ketuk untuk beralih ke tampilan Kalender</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Beralih ke mode masukan teks</string>
-    <string name="mtrl_picker_toggle_to_year_selection">Ketuk untuk beralih ke memilih tahun</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Ketuk untuk beralih ke tampilan tahun</string>
     <string name="mtrl_timepicker_cancel">Batal</string>
     <string name="mtrl_timepicker_confirm">Oke</string>
     <string name="password_toggle_content_description">Tampilkan sandi</string>

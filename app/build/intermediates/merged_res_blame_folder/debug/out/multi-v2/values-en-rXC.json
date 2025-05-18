@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tiendaonline.app-mergeDebugResources-26:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.example.tiendaonline.app-mergeDebugResources-36:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.10\\transforms\\33404c953cb309f6febf9fa52f21f238\\transformed\\core-1.9.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.14\\transforms\\da954e8ef53dd6e98886a76ec7143af4\\transformed\\core-1.9.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.10\\transforms\\8a554ac9a5ed89459e8c63315978d50b\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\caches\\8.14\\transforms\\6e79d204856ef5cea82298a23a93ac58\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

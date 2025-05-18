@@ -5,96 +5,243 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="21"
-9        android:targetSdkVersion="33" />
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
 10
-11    <permission
-11-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\99f631ac21f8f84f0be8864d0aabbc79\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.tiendaonline.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\99f631ac21f8f84f0be8864d0aabbc79\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\99f631ac21f8f84f0be8864d0aabbc79\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:7:22-78
 14
-15    <uses-permission android:name="com.example.tiendaonline.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\99f631ac21f8f84f0be8864d0aabbc79\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\99f631ac21f8f84f0be8864d0aabbc79\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:5:5-34:19
-18        android:allowBackup="true"
-18-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\99f631ac21f8f84f0be8864d0aabbc79\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-20        android:debuggable="true"
-21        android:extractNativeLibs="true"
-22        android:icon="@mipmap/ic_launcher"
-22-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:7:9-43
-23        android:label="@string/app_name"
-23-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:8:9-41
-24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:9:9-54
-25        android:supportsRtl="true"
-25-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:10:9-35
-26        android:testOnly="true"
-27        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" >
-27-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:11:9-76
-28        <activity
-28-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:13:9-20:20
-29            android:name="com.example.tiendaonline.LoginActivity"
-29-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:14:13-42
-30            android:exported="true" >
-30-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:15:13-36
-31            <intent-filter>
-31-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:16:13-19:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:17:17-69
-32-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:17:25-66
+15    <!-- Include required permissions for Google Maps API to run. -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:23:22-76
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+21
+22    <queries>
+22-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
+23
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+25-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+26    </queries>
+27
+28    <permission
+28-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\4253bceb06fdecebf27e19449c4e7063\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+29        android:name="com.example.tiendaonline.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\4253bceb06fdecebf27e19449c4e7063\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\4253bceb06fdecebf27e19449c4e7063\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.example.tiendaonline.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\4253bceb06fdecebf27e19449c4e7063\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\4253bceb06fdecebf27e19449c4e7063\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:18:17-77
-34-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:18:27-74
-35            </intent-filter>
-36        </activity>
-37        <activity
-37-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:22:9-24:40
-38            android:name="com.example.tiendaonline.ProductosActivity"
-38-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:23:13-46
-39            android:exported="false" />
-39-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:24:13-37
-40        <activity
-40-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:26:9-28:40
-41            android:name="com.example.tiendaonline.CarritoActivity"
-41-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:27:13-44
-42            android:exported="false" />
-42-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:28:13-37
-43        <activity
-43-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:30:9-32:40
-44            android:name="com.example.tiendaonline.RegistroActivity"
-44-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:31:13-45
-45            android:exported="false" />
-45-->C:\Users\DEODATO RIZO\Desktop\tienda\app\src\main\AndroidManifest.xml:32:13-37
-46
-47        <provider
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\ff6126bfd0b4bff6610cfb365a214830\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-48            android:name="androidx.startup.InitializationProvider"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\ff6126bfd0b4bff6610cfb365a214830\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-49            android:authorities="com.example.tiendaonline.androidx-startup"
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\ff6126bfd0b4bff6610cfb365a214830\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-50            android:exported="false" >
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\ff6126bfd0b4bff6610cfb365a214830\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-51            <meta-data
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\ff6126bfd0b4bff6610cfb365a214830\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\ff6126bfd0b4bff6610cfb365a214830\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-53                android:value="androidx.startup" />
-53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\ff6126bfd0b4bff6610cfb365a214830\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-54            <meta-data
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\e03b9674007d767ae85ebfc997a0facd\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\e03b9674007d767ae85ebfc997a0facd\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-56                android:value="androidx.startup" />
-56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\e03b9674007d767ae85ebfc997a0facd\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-57        </provider>
-58    </application>
-59
-60</manifest>
+34    <application
+34-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:9:5-48:19
+35        android:name="com.example.tiendaonline.TiendaApplication"
+35-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:10:9-42
+36        android:allowBackup="true"
+36-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:11:9-35
+37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+37-->[androidx.core:core:1.9.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\4253bceb06fdecebf27e19449c4e7063\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+38        android:debuggable="true"
+39        android:extractNativeLibs="false"
+40        android:icon="@mipmap/ic_launcher"
+40-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:12:9-43
+41        android:label="@string/app_name"
+41-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:13:9-41
+42        android:roundIcon="@mipmap/ic_launcher_round"
+42-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:14:9-54
+43        android:supportsRtl="true"
+43-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:15:9-35
+44        android:testOnly="true"
+45        android:theme="@style/Theme.TiendaOnline" >
+45-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:16:9-50
+46        <activity
+46-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:18:9-25:20
+47            android:name="com.example.tiendaonline.LoginActivity"
+47-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:19:13-42
+48            android:exported="true" >
+48-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:20:13-36
+49            <intent-filter>
+49-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:21:13-24:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:22:17-69
+50-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:22:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:23:17-77
+52-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:23:27-74
+53            </intent-filter>
+54        </activity>
+55        <activity
+55-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:27:9-29:40
+56            android:name="com.example.tiendaonline.MainActivity"
+56-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:28:13-41
+57            android:exported="false" />
+57-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:29:13-37
+58        <activity
+58-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:31:9-33:40
+59            android:name="com.example.tiendaonline.CarritoActivity"
+59-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:32:13-44
+60            android:exported="false" />
+60-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:33:13-37
+61        <activity
+61-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:35:9-37:40
+62            android:name="com.example.tiendaonline.RegistroActivity"
+62-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:36:13-45
+63            android:exported="false" />
+63-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:37:13-37
+64        <activity
+64-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:39:9-41:40
+65            android:name="com.example.tiendaonline.CheckoutActivity"
+65-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:40:13-45
+66            android:exported="false" />
+66-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:41:13-37
+67
+68        <!-- Google Maps API Key -->
+69        <meta-data
+69-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:44:9-46:44
+70            android:name="com.google.android.geo.API_KEY"
+70-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:45:13-58
+71            android:value="YOUR_API_KEY" />
+71-->C:\Users\DEODATO RIZO\Desktop\tienda-movil-android\app\src\main\AndroidManifest.xml:46:13-41
+72
+73        <service
+73-->[androidx.room:room-runtime:2.6.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\8f9d7a2496f957ff71dc4f95f084e862\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+74            android:name="androidx.room.MultiInstanceInvalidationService"
+74-->[androidx.room:room-runtime:2.6.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\8f9d7a2496f957ff71dc4f95f084e862\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+75            android:directBootAware="true"
+75-->[androidx.room:room-runtime:2.6.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\8f9d7a2496f957ff71dc4f95f084e862\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+76            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
+76-->[androidx.room:room-runtime:2.6.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\8f9d7a2496f957ff71dc4f95f084e862\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+77        <uses-library
+77-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+78            android:name="org.apache.http.legacy"
+78-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+79            android:required="false" />
+79-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\2736ac8a0bf3a245d62678021f83dbb2\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+80
+81        <activity
+81-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+82            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+82-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+83            android:excludeFromRecents="true"
+83-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+84            android:exported="false"
+84-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+85            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+85-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+86        <!--
+87            Service handling Google Sign-In user revocation. For apps that do not integrate with
+88            Google Sign-In, this service will never be started.
+89        -->
+90        <service
+90-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+91            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+91-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+92            android:exported="true"
+92-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+93            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+93-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+94            android:visibleToInstantApps="true" />
+94-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\7e1b614cf82b0863fe7f78f570ac3346\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+95
+96        <activity
+96-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3c16810853fa20588283c9944db3c60c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+97            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+97-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3c16810853fa20588283c9944db3c60c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3c16810853fa20588283c9944db3c60c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3c16810853fa20588283c9944db3c60c\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+100
+101        <meta-data
+101-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\89580578b390bbf596644e61f0ae0542\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+102            android:name="com.google.android.gms.version"
+102-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\89580578b390bbf596644e61f0ae0542\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+103            android:value="@integer/google_play_services_version" />
+103-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\89580578b390bbf596644e61f0ae0542\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+104
+105        <provider
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3cf5bb2eaa89f70d2d65612efe9ce47f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+106            android:name="androidx.startup.InitializationProvider"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3cf5bb2eaa89f70d2d65612efe9ce47f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+107            android:authorities="com.example.tiendaonline.androidx-startup"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3cf5bb2eaa89f70d2d65612efe9ce47f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+108            android:exported="false" >
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3cf5bb2eaa89f70d2d65612efe9ce47f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109            <meta-data
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3cf5bb2eaa89f70d2d65612efe9ce47f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3cf5bb2eaa89f70d2d65612efe9ce47f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+111                android:value="androidx.startup" />
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\3cf5bb2eaa89f70d2d65612efe9ce47f\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\e5d848d7df37423f4dce2f512af3a8d3\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\e5d848d7df37423f4dce2f512af3a8d3\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\e5d848d7df37423f4dce2f512af3a8d3\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+115            <meta-data
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+117                android:value="androidx.startup" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+118        </provider>
+119
+120        <receiver
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+121            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+122            android:directBootAware="false"
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+123            android:enabled="true"
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+124            android:exported="true"
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+125            android:permission="android.permission.DUMP" >
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+127                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+128            </intent-filter>
+129            <intent-filter>
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+130                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+130-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+131            </intent-filter>
+132            <intent-filter>
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+133                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+133-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+134            </intent-filter>
+135            <intent-filter>
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+136                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+136-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\DEODATO RIZO\Desktop\gradle-7.5bin\caches\8.11.1\transforms\1d68993df60a6a58189c6700850eea95\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+137            </intent-filter>
+138        </receiver>
+139    </application>
+140
+141</manifest>

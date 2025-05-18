@@ -1,6 +1,12 @@
 package com.example.tiendaonline;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "productos")
 public class Producto {
+    @PrimaryKey(autoGenerate = true)
+    private int id;
     private String nombre;
     private String descripcion;
     private double precio;
@@ -11,6 +17,14 @@ public class Producto {
         this.descripcion = descripcion;
         this.precio = precio;
         this.imagen = imagen;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {

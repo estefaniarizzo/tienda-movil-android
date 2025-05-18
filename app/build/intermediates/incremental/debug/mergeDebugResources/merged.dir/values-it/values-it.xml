@@ -39,6 +39,24 @@
     <string name="character_counter_content_description">%1$d caratteri inserirti su %2$d</string>
     <string name="character_counter_overflowed_content_description">Sono presenti %2$d caratteri in più rispetto al limite di %1$d</string>
     <string name="clear_text_end_icon_content_description">Cancella testo</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Attiva</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s non funzionerà se non attivi Google Play Services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Attiva Google Play Services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installa</string>
+    <string name="common_google_play_services_install_text">L\'app %1$s non funzionerà senza Google Play Services, non presente sul tuo dispositivo.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Installa Google Play Services</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilità di Google Play Services</string>
+    <string name="common_google_play_services_notification_ticker">Errore Google Play Services</string>
+    <string name="common_google_play_services_unknown_issue">%1$s sta riscontrando problemi con Google Play Services. Riprova.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s non funzionerà senza Google Play Services, non supportati dal tuo dispositivo.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Aggiorna</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s non funzionerà se non aggiorni Google Play Services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Aggiorna Google Play Services</string>
+    <string name="common_google_play_services_updating_text">%1$s non funzionerà senza Google Play Services, attualmente in fase di aggiornamento.</string>
+    <string name="common_google_play_services_wear_update_text">È richiesta una nuova versione di Google Play Services. L\'aggiornamento automatico verrà eseguito a breve.</string>
+    <string name="common_open_on_phone">Apri sul telefono</string>
+    <string name="common_signin_button_text">Accedi</string>
+    <string name="common_signin_button_text_long">Accedi con Google</string>
     <string name="error_icon_content_description">Errore</string>
     <string name="exposed_dropdown_menu_content_description">Mostra il menu a discesa</string>
     <string name="icon_content_description">Icona della finestra di dialogo</string>
@@ -61,18 +79,22 @@
     <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Più di %1$d nuove notifiche</string>
     <string name="mtrl_picker_a11y_next_month">Passa al mese successivo</string>
     <string name="mtrl_picker_a11y_prev_month">Passa al mese precedente</string>
+    <string name="mtrl_picker_announce_current_range_selection">Selezione della data di inizio: %1$s. Selezione della data di fine: %2$s</string>
     <string name="mtrl_picker_announce_current_selection">Selezione attuale: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">Nessuna selezione</string>
     <string name="mtrl_picker_cancel">Annulla</string>
     <string name="mtrl_picker_confirm">OK</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">Seleziona data</string>
     <string name="mtrl_picker_date_header_unselected">Data selezionata</string>
     <string name="mtrl_picker_day_of_week_column_header">Colonna dei giorni: %1$s</string>
+    <string name="mtrl_picker_end_date_description">Data di fine: %1$s</string>
     <string name="mtrl_picker_invalid_format">Formato non valido.</string>
     <string name="mtrl_picker_invalid_format_example">Esempio: %1$s</string>
     <string name="mtrl_picker_invalid_format_use">Usa: %1$s</string>
     <string name="mtrl_picker_invalid_range">Intervallo non valido.</string>
-    <string name="mtrl_picker_navigate_to_year_description">Vai all\'anno %1$s</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Vai all\'anno corrente %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Vai all\'anno %1$d</string>
     <string name="mtrl_picker_out_of_range">Non compresa nell\'intervallo: %1$s</string>
     <string name="mtrl_picker_range_header_only_end_selected">Data di inizio - %1$s</string>
     <string name="mtrl_picker_range_header_only_start_selected">%1$s - Data di fine</string>
@@ -80,16 +102,18 @@
     <string name="mtrl_picker_range_header_title">Seleziona intervallo</string>
     <string name="mtrl_picker_range_header_unselected">Data di inizio - Data di fine</string>
     <string name="mtrl_picker_save">Salva</string>
+    <string name="mtrl_picker_start_date_description">Data di inizio: %1$s</string>
     <string name="mtrl_picker_text_input_date_hint">Data</string>
     <string name="mtrl_picker_text_input_date_range_end_hint">Data di fine</string>
     <string name="mtrl_picker_text_input_date_range_start_hint">Data di inizio</string>
     <string name="mtrl_picker_text_input_day_abbr">g</string>
     <string name="mtrl_picker_text_input_month_abbr">m</string>
     <string name="mtrl_picker_text_input_year_abbr">a</string>
+    <string name="mtrl_picker_today_description">Oggi %1$s</string>
     <string name="mtrl_picker_toggle_to_calendar_input_mode">Passa alla modalità di immissione Calendario</string>
-    <string name="mtrl_picker_toggle_to_day_selection">Tocca per passare alla selezione di un giorno</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tocca per passare alla visualizzazione Calendario</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Passa alla modalità di immissione Testo</string>
-    <string name="mtrl_picker_toggle_to_year_selection">Tocca per passare alla selezione di un anno</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tocca per passare alla visualizzazione Anno</string>
     <string name="mtrl_timepicker_cancel">Annulla</string>
     <string name="mtrl_timepicker_confirm">OK</string>
     <string name="password_toggle_content_description">Mostra password</string>

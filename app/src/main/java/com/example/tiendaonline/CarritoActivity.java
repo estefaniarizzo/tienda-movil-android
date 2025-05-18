@@ -1,5 +1,6 @@
 package com.example.tiendaonline;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,14 +11,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CarritoActivity extends AppCompatActivity {
     private RecyclerView rvCarrito;
     private TextView tvTotal;
     private Button btnCheckout;
-    private List<Producto> carrito;
     private ProductoAdapter adapter;
 
     @Override
@@ -32,7 +31,7 @@ public class CarritoActivity extends AppCompatActivity {
 
         // Configurar RecyclerView
         rvCarrito.setLayoutManager(new LinearLayoutManager(this));
-        carrito = new ArrayList<>(); // Aquí cargaríamos los productos del carrito
+        List<Producto> carrito = CarritoManager.getInstance().getCarrito();
         adapter = new ProductoAdapter(carrito, null);
         rvCarrito.setAdapter(adapter);
 
@@ -44,8 +43,8 @@ public class CarritoActivity extends AppCompatActivity {
                     Toast.makeText(CarritoActivity.this, "El carrito está vacío", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                // Aquí implementaríamos la lógica de checkout
-                Toast.makeText(CarritoActivity.this, "Procediendo al pago...", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CarritoActivity.this, CheckoutActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -53,10 +52,14 @@ public class CarritoActivity extends AppCompatActivity {
     }
 
     private void actualizarTotal() {
-        double total = 0;
-        for (Producto producto : carrito) {
-            total += producto.getPrecio();
-        }
+        double total = CarritoManager.getInstance().getTotal();
         tvTotal.setText(String.format("Total: $%.2f", total));
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        adapter.notifyDataSetChanged();
+        actualizarTotal();
     }
 }

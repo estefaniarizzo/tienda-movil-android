@@ -1,34 +1,66 @@
 [
     {
-        "merged": "com.example.tiendaonline.app-merged_res-28:/layout_activity_productos.xml.flat",
-        "source": "com.example.tiendaonline.app-main-30:/layout/activity_productos.xml"
+        "merged": "com.example.tiendaonline.app-merged_res-38:/drawable_ic_profile.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/drawable/ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_item_producto.xml.flat",
-        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\item_producto.xml"
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_activity_registro.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/activity_registro.xml"
     },
     {
-        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_activity_carrito.xml.flat",
-        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\activity_carrito.xml"
+        "merged": "com.example.tiendaonline.app-merged_res-38:/mipmap_ic_launcher.png.flat",
+        "source": "com.example.tiendaonline.app-main-40:/mipmap/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_activity_registro.xml.flat",
-        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\activity_registro.xml"
+        "merged": "com.example.tiendaonline.app-merged_res-38:/menu_main_menu.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/menu/main_menu.xml"
     },
     {
-        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\activity_login.xml"
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_activity_checkout.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/activity_checkout.xml"
     },
     {
-        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\layout_activity_productos.xml.flat",
-        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\layout\\activity_productos.xml"
+        "merged": "com.example.tiendaonline.app-merged_res-38:/drawable_ic_products.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/drawable/ic_products.xml"
     },
     {
-        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\mipmap_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\mipmap\\ic_launcher_round.png"
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_item_producto.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/item_producto.xml"
     },
     {
-        "merged": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-merged_res-28:\\mipmap_ic_launcher.png.flat",
-        "source": "C:\\Users\\DEODATO RIZO\\Desktop\\gradle-7.5bin\\daemon\\8.10\\com.example.tiendaonline.app-main-30:\\mipmap\\ic_launcher.png"
+        "merged": "com.example.tiendaonline.app-merged_res-38:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/drawable_ic_google.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/drawable/ic_google.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_activity_carrito.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/activity_carrito.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_activity_login.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_fragment_productos.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/fragment_productos.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_activity_productos.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/activity_productos.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_fragment_perfil.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/fragment_perfil.xml"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/mipmap_ic_launcher_round.png.flat",
+        "source": "com.example.tiendaonline.app-main-40:/mipmap/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_activity_main.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/activity_main.xml"
     }
 ]
