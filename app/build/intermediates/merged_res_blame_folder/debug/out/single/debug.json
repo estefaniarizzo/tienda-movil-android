@@ -40,6 +40,10 @@
         "source": "com.example.tiendaonline.app-main-40:/layout/activity_carrito.xml"
     },
     {
+        "merged": "com.example.tiendaonline.app-merged_res-38:/layout_activity_producto_form.xml.flat",
+        "source": "com.example.tiendaonline.app-main-40:/layout/activity_producto_form.xml"
+    },
+    {
         "merged": "com.example.tiendaonline.app-merged_res-38:/layout_activity_login.xml.flat",
         "source": "com.example.tiendaonline.app-main-40:/layout/activity_login.xml"
     },

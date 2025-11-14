@@ -22,7 +22,9 @@ public abstract class AppDatabase extends RoomDatabase {
             instance = Room.databaseBuilder(
                     context.getApplicationContext(),
                     AppDatabase.class,
-                    "tienda_db").build();
+                    "tienda_db")
+                    .fallbackToDestructiveMigration()
+                    .build();
         }
         return instance;
     }

@@ -1,7 +1,9 @@
 package com.example.tiendaonline;
 
+import android.Manifest;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -13,14 +15,18 @@ import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.example.tiendaonline.database.AppDatabase;
 
 public class ProductoFormActivity extends AppCompatActivity {
 
     public static final String EXTRA_PRODUCTO_ID = "extra_producto_id";
+    private static final int REQUEST_CAMERA_PERMISSION = 1001;
 
     private EditText etNombreProducto;
     private EditText etDescripcionProducto;
@@ -87,6 +93,14 @@ public class ProductoFormActivity extends AppCompatActivity {
     }
 
     private void lanzarCamara() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.CAMERA},
+                    REQUEST_CAMERA_PERMISSION);
+            return;
+        }
+
         ContentValues values = new ContentValues();
         values.put(MediaStore.Images.Media.TITLE, "producto_" + System.currentTimeMillis());
         values.put(MediaStore.Images.Media.DESCRIPTION, "Foto de producto");
@@ -100,6 +114,19 @@ public class ProductoFormActivity extends AppCompatActivity {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         intent.putExtra(MediaStore.EXTRA_OUTPUT, fotoUriActual);
         tomarFotoLauncher.launch(intent);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQUEST_CAMERA_PERMISSION) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                lanzarCamara();
+            } else {
+                Toast.makeText(this, "Se requiere permiso de cámara para tomar la foto", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
     private void guardarProducto() {
