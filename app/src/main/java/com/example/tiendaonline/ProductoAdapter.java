@@ -15,14 +15,23 @@ import java.util.List;
 public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.ProductoViewHolder> {
     private List<Producto> productos;
     private OnProductoClickListener listener;
+    private OnProductoAdminClickListener adminClickListener;
 
     public interface OnProductoClickListener {
         void onAgregarClick(Producto producto);
     }
 
+    public interface OnProductoAdminClickListener {
+        void onProductoLongClick(Producto producto);
+    }
+
     public ProductoAdapter(List<Producto> productos, OnProductoClickListener listener) {
         this.productos = productos;
         this.listener = listener;
+    }
+
+    public void setOnProductoAdminClickListener(OnProductoAdminClickListener adminClickListener) {
+        this.adminClickListener = adminClickListener;
     }
 
     @NonNull
@@ -61,7 +70,16 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.Produc
         }
 
         public void bind(final Producto producto) {
-            ivProducto.setImageResource(producto.getImagen());
+            String uri = producto.getImagenUri();
+            if (uri != null && !uri.isEmpty()) {
+                try {
+                    ivProducto.setImageURI(android.net.Uri.parse(uri));
+                } catch (Exception e) {
+                    ivProducto.setImageResource(producto.getImagen());
+                }
+            } else {
+                ivProducto.setImageResource(producto.getImagen());
+            }
             tvNombre.setText(producto.getNombre());
             tvDescripcion.setText(producto.getDescripcion());
             tvPrecio.setText(String.format("$%.2f", producto.getPrecio()));
@@ -73,6 +91,14 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.Produc
                         listener.onAgregarClick(producto);
                     }
                 }
+            });
+
+            itemView.setOnLongClickListener(v -> {
+                if (adminClickListener != null) {
+                    adminClickListener.onProductoLongClick(producto);
+                    return true;
+                }
+                return false;
             });
         }
     }

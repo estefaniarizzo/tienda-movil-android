@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".TiendaApplication"
@@ -40,10 +41,14 @@
             android:name=".CheckoutActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ProductoFormActivity"
+            android:exported="false" />
+
         <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyAsyw7_zD1TbvqUWQbOKGsh8ITKGxrl7vM" />
 
     </application>
 

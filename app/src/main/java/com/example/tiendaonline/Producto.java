@@ -11,6 +11,7 @@ public class Producto {
     private String descripcion;
     private double precio;
     private int imagen;
+    private String imagenUri; // URI de la imagen en almacenamiento
 
     public Producto(String nombre, String descripcion, double precio, int imagen) {
         this.nombre = nombre;
@@ -57,5 +58,13 @@ public class Producto {
 
     public void setImagen(int imagen) {
         this.imagen = imagen;
+    }
+
+    public String getImagenUri() {
+        return imagenUri;
+    }
+
+    public void setImagenUri(String imagenUri) {
+        this.imagenUri = imagenUri;
     }
 }
