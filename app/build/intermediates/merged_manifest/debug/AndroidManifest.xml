@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <!-- Include required permissions for Google Maps API to run. -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -64,11 +65,14 @@
         <activity
             android:name="com.example.tiendaonline.CheckoutActivity"
             android:exported="false" />
+        <activity
+            android:name="com.example.tiendaonline.ProductoFormActivity"
+            android:exported="false" />
 
         <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyAsyw7_zD1TbvqUWQbOKGsh8ITKGxrl7vM" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

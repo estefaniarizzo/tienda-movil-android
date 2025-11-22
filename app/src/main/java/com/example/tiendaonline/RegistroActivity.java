@@ -9,7 +9,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tiendaonline.database.AppDatabase;
+
 public class RegistroActivity extends AppCompatActivity {
+
     private EditText etNombre, etEmail, etPassword, etConfirmarPassword, etTelefono;
     private Button btnRegistrar, btnVolver;
 
@@ -32,11 +35,7 @@ public class RegistroActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (validarCampos()) {
-                    // Aquí implementaríamos la lógica de registro
-                    Toast.makeText(RegistroActivity.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
-                    startActivity(intent);
-                    finish();
+                    registrarUsuario();
                 }
             }
         });
@@ -47,6 +46,37 @@ public class RegistroActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    private void registrarUsuario() {
+        String nombre = etNombre.getText().toString();
+        String email = etEmail.getText().toString();
+        String password = etPassword.getText().toString();
+
+        new Thread(() -> {
+            AppDatabase db = AppDatabase.getInstance(this);
+
+            // Verificar si ya existe un usuario con ese email
+            Usuario existente = db.usuarioDao().getByEmail(email);
+            if (existente != null) {
+                runOnUiThread(() -> {
+                    Toast.makeText(RegistroActivity.this, "Ya existe un usuario con ese email", Toast.LENGTH_SHORT)
+                            .show();
+                });
+                return;
+            }
+
+            // Crear usuario con rol cliente por defecto
+            Usuario nuevo = new Usuario(email, password, nombre, "cliente");
+            db.usuarioDao().insert(nuevo);
+
+            runOnUiThread(() -> {
+                Toast.makeText(RegistroActivity.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            });
+        }).start();
     }
 
     private boolean validarCampos() {

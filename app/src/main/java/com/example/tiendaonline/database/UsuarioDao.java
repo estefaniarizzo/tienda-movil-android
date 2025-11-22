@@ -1,10 +1,14 @@
 package com.example.tiendaonline.database;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import com.example.tiendaonline.Usuario;
+
+import java.util.List;
 
 @Dao
 public interface UsuarioDao {
@@ -14,6 +18,15 @@ public interface UsuarioDao {
     @Query("SELECT * FROM usuarios WHERE email = :email LIMIT 1")
     Usuario getByEmail(String email);
 
+    @Query("SELECT * FROM usuarios")
+    List<Usuario> getAll();
+
     @Insert
     void insert(Usuario usuario);
-} 
+
+    @Update
+    void update(Usuario usuario);
+
+    @Delete
+    void delete(Usuario usuario);
+}
